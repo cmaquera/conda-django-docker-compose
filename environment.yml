@@ -1,0 +1,17 @@
+name: notebook-prd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyter
+  - python=3.10.13
+  - pip
+  - pip:
+    - djangorestframework
+    - Pillow
+    - pyjwt
+    - python-decouple
+    - django-cors-headers
+    - ipykernel
+    - gunicorn
+    - psycopg2-binary

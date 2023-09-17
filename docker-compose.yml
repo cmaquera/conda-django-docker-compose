@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  notebook-api:
+    container_name: notebook-prd
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    ports:
+      - 8080:8080
+      - 8000:8000
